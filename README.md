@@ -5,6 +5,8 @@
 ## Table of contents
 * [General info](#general-info)
 * [Algorithm description](#Algorithm-description)
+	    * [code speciality](#sect one)
+            * [code readability](#sect two)
 * [Setup](#setup)
 
 ## General info

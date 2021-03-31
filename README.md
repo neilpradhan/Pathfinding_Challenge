@@ -5,8 +5,6 @@
 ## Table of contents
 * [General info](#general-info)
 * [Algorithm description](#Algorithm-description)
-	    * [code speciality](#sect one)
-            * [code readability](#sect two)
 * [Setup](#setup)
 
 ## General info
@@ -22,11 +20,11 @@ Firstly, I make the edges (vector <vector<int>>) which is nothing but the map an
 I make a list distances which tells me how far the node is from the start node and closed list which is a map of node index to its parent, the closed list will help me to trace back the path
 As per the algorithm, I maintain a priority queue which gives me the node with least value of heuristic function (f=g+h), then I pop the node out see if it is the target or not and some basic checks as per requirements, I then propagate the node in four directions as per the question, and fill the respective node attributes until the path is found and if not found I return -1. If path is found I fill the path in the poutBuffer array.
 	
-#Code speciality:
+# Code speciality:
 1.	Pointers used for better space complexity and memory management
 2.	Very efficient memory management, memory created only when required and all memory created on heap.
 
-#Code readability:
+# Code readability:
 1.	No global variables used
 
 

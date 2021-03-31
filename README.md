@@ -34,7 +34,7 @@ To run this project, install it locally using visual studio code:
 
 
 ```
-$ cd ../Pathfinding_challenge_kattis
-$ g++ path_finding_a_star.cpp
-$ .a\.exe
+$ cd Pathfinding_challenge_kattis
+$ g++ .\path_finding_a_star.cpp
+$ .\a.exe
 ```

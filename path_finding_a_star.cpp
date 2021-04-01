@@ -105,16 +105,12 @@ int FindPath(const int nStartX, const int nStartY,
                     vector<int> v;
                     for (int j = 0;j<nMapWidth;j++)
                     {   
-                        // v.push_back(pMap[nMapWidth * nMapHeight -j-(i*nMapWidth)]);
-
                         v.push_back(pMap[convert_to_mp_index(j, i,nMapWidth,nMapHeight)]);
                     
                     }
-                    // reverse(v.begin(),v.end());
                     edges.push_back(v);
 
                 }
-                // reverse(edges.begin(), edges.end());
 
 
                
@@ -130,7 +126,6 @@ int FindPath(const int nStartX, const int nStartY,
                     return 0;
                 }
 
-                // if nStartY<0  && nStartY>
 
                 printMatrix(edges);
 
@@ -325,22 +320,7 @@ void LogResult(const int inStartIndex, const int inStepAmount, const int* inPath
 
 int main()
 {
-    
-    // unsigned char pMap[] = {1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1};
-    // int pOutBuffer[12];
-    // int k  = FindPath(0, 0, 1, 2, pMap, 4, 3, pOutBuffer, 12);
-    // cout<<k;
-
-    // // unsigned char pMap[] = {0, 0, 1, 0, 1, 1, 1, 0, 1};
-    // // int pOutBuffer[7];
-    // // int k = FindPath(2, 0, 0, 2, pMap, 3, 3, pOutBuffer, 7);
-    // // cout<<k;
-    // for (int i =0;i<k;i++)
-    // {
-    //     cout<<pOutBuffer[i]<<endl;
-    // }
-
-    // // case 0
+    	// // case 0
 	int case_zero_result = FindPath(0, 0, 3, 2, gCaseZeroMap, 4, 3, gCaseZeroBuffer, gCaseZeroBufferSize);
 	LogResult(4 * 0 + 0, case_zero_result, gCaseZeroBuffer);
 
@@ -364,10 +344,10 @@ int main()
 	int huge_map_result = FindPath(0, 0, 0, 19, gHugeMap, 20, 20, gHugeBuffer, gHugeBufferSize);
 	LogResult(0, huge_map_result, gHugeBuffer);
 
-    // // case #6 
-    int map_neil_6 =  FindPath(0, 0, 0, 1, g_neil_6_Map,2, 2,gHugebuffer_neil_6 , gHugebuffer_neil_6_size);
-    LogResult(0,map_neil_6 , gHugebuffer_neil_6);
-    return 0;
+    	// // case #6 
+    	int map_neil_6 =  FindPath(0, 0, 0, 1, g_neil_6_Map,2, 2,gHugebuffer_neil_6 , gHugebuffer_neil_6_size);
+    	LogResult(0,map_neil_6 , gHugebuffer_neil_6);
+    	return 0;
     
 }
 

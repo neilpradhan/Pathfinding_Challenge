@@ -1,4 +1,4 @@
-# Pathfinding_Challenge_kattis
+# Pathfinding_Challenge
 
 
 
